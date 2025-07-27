@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title -->
+    <title>Industries We Serve - RiskLimiter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* CSS Color Palette (Preserved from original design) */
+        :root {
+            --antiflash-white: #F0F2F5;
+            --mint: #00C49A;
+            --cambridge-blue: #8DB3B0;
+            --eerie-black: #1A1A1A;
+            --sapphire: #0052CC;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--eerie-black);
+            color: var(--antiflash-white);
+        }
+        .text-muted {
+            color: var(--cambridge-blue);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, var(--mint), var(--sapphire));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            background-color: var(--mint);
+            color: var(--eerie-black);
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 196, 154, 0.2), 0 4px 6px -2px rgba(0, 196, 154, 0.15);
+        }
+        .industry-card {
+            background-color: #212121; /* Slightly lighter than main bg */
+            border: 1px solid #2a2a2a;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .industry-card:hover {
+            border-color: var(--mint);
+            transform: translateY(-4px);
+        }
+        .icon-container {
+            background-color: rgba(0, 196, 154, 0.1);
+            color: var(--mint);
+        }
+        .footer-link:hover {
+            color: var(--mint);
+        }
+
+        /* Custom styles for the logo image */
+        .logo-image {
+            height: 90px; /* Adjusted height to make it even larger using CSS */
+            width: auto; /* Maintain aspect ratio */
+            display: block; /* Ensures it behaves like a block element for margin auto */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Main Container - Now wraps all primary content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Navigation with Logo -->
+        <nav class="py-8 pl-8 flex items-center"> <!-- Adjusted padding here -->
+            <a href="#" aria-label="Home">
+                <img src="/Users/joshrosen/Desktop/RiskLimiter Logo in Corner Test/Home/Images/risk+limiter+logo.png" alt="RiskLimiter Logo" class="logo-image">
+            </a>
+        </nav>
+
+        <!-- Header/Hero Section -->
+        <header class="text-center py-24 sm:py-32">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tighter leading-tight">
+                Industries We <span class="gradient-text">Serve</span>
+            </h1>
+            <p class="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-muted">
+                RiskLimiter provides tailored solutions to meet the unique challenges of various industries, enhancing safety, ensuring compliance, and improving operational efficiency.
+            </p>
+        </header>
+
+        <main>
+            <!-- Industries Section -->
+            <section class="py-16">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Industry 1: Grocery -->
+                    <div class="industry-card p-8 rounded-xl">
+                        <div class="icon-container w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.16"/></svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-2xl font-bold">Grocery</h2>
+                            <p class="mt-2 text-muted flex-grow">
+                               At RiskLimiter, we designed our Inspection Suite with one goal in mind: to make the retail food industry safer, smarter, and more cost-effective. We understand the daily realities—slippery floors, unpredictable weather, food safety risks, and complex compliance requirements. That’s why our software is built to help you reduce costs, prevent accidents, ensure food safety, and stay ahead of potential issues before they become problems. RiskLimiter isn’t just a tool—it’s your proactive partner. Our solutions help you anticipate, prevent, and manage the challenges that come with running safe, compliant, and welcoming food retail environments.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#schedule-demo" class="cta-button">Schedule a Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Industry 2: Restaurants & Hospitality -->
+                    <div class="industry-card p-8 rounded-xl">
+                        <div class="icon-container w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-utensils-crossed"><path d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8-1.8 1.8a3 3 0 0 0 0 4.2l2.3 2.3"/><path d="m8 2 2.3 2.3a3 3 0 0 1 0 4.2l-1.8 1.8 1.8 1.8a3 3 0 0 1 0 4.2L8 22"/><path d="M2 12h20"/></svg>
+                        </div>
+                         <div class="flex-grow">
+                            <h2 class="text-2xl font-bold">Restaurants & Hospitality</h2>
+                            <p class="mt-2 text-muted">
+                               Serving food to the public inherently comes with risks—but proactively managing those risks, including food safety, can significantly reduce costs and improve outcomes. In the hospitality industry, potential liabilities and workers' compensation claims often stem from issues like kitchen spills, grease buildup, food safety lapses, and compliance challenges. The RiskLimiter Inspection Suite is designed to anticipate, prevent, and cost-effectively resolve both accidents and safety incidents. Our solutions support a broad range of needs in today’s fast-paced hospitality environment—helping teams stay safe, compliant, and confident.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#schedule-demo" class="cta-button">Schedule a Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Industry 3: K-12 Schools -->
+                    <div class="industry-card p-8 rounded-xl">
+                        <div class="icon-container w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-school"><path d="M14 22v-4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4"/><path d="M18 10h4v12"/><path d="M2 10h20"/><path d="M10 2 4 7v3"/><path d="m14 7 6-5"/><path d="M6 22v-4"/><path d="M12 22v-4"/></svg>
+                        </div>
+                         <div class="flex-grow">
+                            <h2 class="text-2xl font-bold">K-12 Schools</h2>
+                            <p class="mt-2 text-muted">
+                               RiskLimiter simplifies K-12 food service tasks with automated production records, temperature logs, and sensor monitoring. This solution saves time by streamlining the cooking and cooling process, ensures real-time oversight of storage conditions, and provides alerts for temperature unit failures. Customizable inspections and automated logs make regulatory compliance easy, contributing to a safer school food environment and demonstrating a commitment to student and staff well-being.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                           <a href="#schedule-demo" class="cta-button">Schedule a Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Industry 4: Higher Education -->
+                    <div class="industry-card p-8 rounded-xl">
+                        <div class="icon-container w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0 0 1.838l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-2xl font-bold">Higher Education</h2>
+                            <p class="mt-2 text-muted">
+                               RiskLimiter transforms food safety in higher education dining by providing a centralized platform for compliance management. Customizable checklists and real-time monitoring significantly reduce the risk of foodborne illnesses. Our user-friendly interface encourages a proactive food safety culture, prioritizing the well-being of students and staff. By using RiskLimiter, higher education dining facilities enhance safety and optimize operations for a more efficient and compliant dining experience.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#schedule-demo" class="cta-button">Schedule a Demo</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Industry 5: Distribution -->
+                    <div class="industry-card p-8 rounded-xl">
+                        <div class="icon-container w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck"><path d="M5 18H3c0-1.1.9-2 2-2v4c-1.1 0-2-.9-2-2Z"/><path d="M19 18h2c0-1.1-.9-2-2-2v4c1.1 0 2-.9 2-2Z"/><path d="M10 18H5.2c-1.2 0-2.2-.9-2.2-2V7c0-1.1.8-2 1.9-2h11.4c1 0 1.9.9 1.9 2v4"/><path d="M10 18v-5h4v5"/><path d="M10 9V7"/><path d="M14 9V7"/><path d="M22 13.5h-1.8c-.7 0-1.2.6-1.2 1.2v2.6c0 .7.6 1.2 1.2 1.2H22"/><circle cx="17" cy="18" r="2"/></svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-2xl font-bold">Distribution</h2>
+                            <p class="mt-2 text-muted">
+                               Distribution centers rely on Risklimiter for efficient, accurate, and location-driven compliance inspections. Our software is tailored for your facility, ensuring a streamlined approach for precise monitoring of storage conditions compliance standards.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#schedule-demo" class="cta-button">Schedule a Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA Section -->
+            <section id="schedule-demo" class="py-24 text-center">
+                <div class="max-w-xl mx-auto">
+                    <h2 class="text-3xl font-bold tracking-tight">Ready to Enhance Your Operations?</h2>
+                    <p class="mt-4 text-lg text-muted">
+                        Let us show you how RiskLimiter can save you time, money, and stress.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#" class="cta-button text-lg">
+                            Schedule a Demo
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-800 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-3 gap-8 text-muted">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-white">Contact Us</h3>
+                    <div class="mt-4 space-y-2">
+                        <p>Phone: 1.800.336.7558</p>
+                        <p>Email: sales@risklimiter.com</p>
+                    </div>
+                </div>
+                 <!-- Headquarters -->
+                <div>
+                    <h3 class="font-semibold text-white">Corporate Headquarters</h3>
+                    <address class="mt-4 space-y-2 not-italic">
+                        <p>941 Menoher Boulevard, Johnstown, PA 15905</p>
+                        <p>Phone: 814.535.8287</p>
+                    </address>
+                </div>
+                <!-- Social Links -->
+                <div class="md:text-right">
+                    <h3 class="font-semibold text-white">Follow Us</h3>
+                    <div class="flex md:justify-end space-x-4 mt-4">
+                        <a href="#" class="footer-link transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" class="footer-link transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 1.4 2.8 3.2 3 5.2-9.7 1.2-13.4-3.6-13.4-3.6-2 2.8-2.5 5.1-2.5 5.1s-1.4.3-1.4-1.2c-.3 1.5.3 3.2.3 3.2s-2.1 1.2-3.4 1.2c1.4 3.6 5.2 5.1 5.2 5.1s-3.4 2.8-7.9 2.8c9.1 4.9 19.3 1.2 19.3-10.4 0-.5 0-1-.1-1.5z"></path></svg></a>
+                        <a href="#" class="footer-link transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucude-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    </div>
+                </div>
+            </div>
+             <div class="mt-8 pt-8 border-t border-neutral-800 text-center text-sm text-muted">
+                <p>&copy; 2024 RiskLimiter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // This script is for the icons.
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
